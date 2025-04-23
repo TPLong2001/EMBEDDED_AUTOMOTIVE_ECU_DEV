@@ -66,13 +66,15 @@ int main(){
 	GPIOA->CRL &= ~(7U);
 	GPIOA->ODR |= (1 << 0);
 	
+	WritePin(GPIOC,13,0);
+	
 	while(1)
 	{
-		if(GPIOA->IDR & (1 << 0)){
-			WritePin(GPIOC,13,1);
-		}else{
-			WritePin(GPIOC,13,0);
-		}
+//		if(GPIOA->IDR & (1 << 0)){
+//			WritePin(GPIOC,13,1);
+//		}else{
+//			WritePin(GPIOC,13,0);
+//		}
 	}
 }
 
