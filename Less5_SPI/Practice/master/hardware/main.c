@@ -74,7 +74,7 @@ void SPI_Send1Byte(uint8_t data){
 	// Keo CS xuong 0
 	// Kiem tra xem thanh ghi DATA TRUYEN co rong khong (SPI da truyen xong chua) -> FLAG_TXE = 1
 	// Neu da truyen xong thi bat dau truyen du lieu
-	// Sau khi truyen xong thi kiem tra xem co ban truyen hay khong -> FLAG_BSY = 0
+	// Sau khi truyen xong thi kiem tra xem flag busy transmit hay khong -> FLAG_BSY = 0
 	// Keo CS len 1
 	
 	// MASTER

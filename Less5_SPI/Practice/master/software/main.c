@@ -13,6 +13,8 @@
 #define SPI_MOSI_HIGH		GPIO_SetBits(SPI_GPIO, SPI_MOSI_Pin)
 #define SPI_MOSI_LOW		GPIO_ResetBits(SPI_GPIO, SPI_MOSI_Pin)
 
+#define SPI_MISO_LOW		GPIO_ResetBits(SPI_GPIO, SPI_MISO_Pin)
+
 #define SPI_CS_HIGH			GPIO_SetBits(SPI_GPIO, SPI_CS_Pin)
 #define SPI_CS_LOW			GPIO_ResetBits(SPI_GPIO, SPI_CS_Pin)
 

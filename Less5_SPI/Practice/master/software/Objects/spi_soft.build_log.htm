@@ -3,13 +3,13 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ÂµVision V5.31.0.0
+IDE-Version: µVision V5.31.0.0
 Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: cong ly, truongcongly.com, LIC=YA39H-WIZVT-30HNC-7Q0J1-NP01Q-12Z06
+License Information: LONG TRUONG, PHI, LIC=BUURY-IN4J8-GKVBG-V0NJW-7XGRN-QFUAX
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.14
 Assembler:       Armasm.exe V6.14
 Linker/Locator:  ArmLink.exe V6.14
@@ -17,17 +17,117 @@ Library Manager: ArmAr.exe V6.14
 Hex Converter:   FromElf.exe V6.14
 CPU DLL:         SARMCM3.DLL V5.31.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      UL2CM3.DLL V1.163.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
 Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
-D:\code\EMB_STM32_INTERVIEW\EMBEDDED_AUTOMOTIVE_ECU_DEV\Less5_SPI\Practice\software\spi_soft.uvprojx
-Project File Date:  04/06/2025
+D:\code\EMB_STM32_INTERVIEW\EMBEDDED_AUTOMOTIVE_ECU_DEV\EMBEDDED_AUTOMOTIVE_ECU_DEV\Less5_SPI\Practice\master\software\spi_soft.uvprojx
+Project File Date:  04/23/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Target 1'
-".\Objects\spi_soft.axf" - 0 Error(s), 0 Warning(s).
+*** Using Compiler 'V6.14', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/misc.c(131): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                               ~ ^~~~~~~~~~~
+1 warning generated.
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+main.c(25): warning: no previous prototype for function 'RCC_Config' [-Wmissing-prototypes]
+void RCC_Config(void){
+     ^
+main.c(25): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void RCC_Config(void){
+^
+static 
+main.c(1): warning: In file included from...
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f10x_conf.h(87): warning: In file included from...
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(50): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+main.c(33): warning: no previous prototype for function 'TIM_Config' [-Wmissing-prototypes]
+void TIM_Config(void){
+     ^
+main.c(33): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM_Config(void){
+^
+static 
+main.c(47): warning: no previous prototype for function 'GPIO_Config' [-Wmissing-prototypes]
+void GPIO_Config(void){
+     ^
+main.c(47): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_Config(void){
+^
+static 
+main.c(63): warning: no previous prototype for function 'Delay_ms' [-Wmissing-prototypes]
+void Delay_ms(uint32_t ms)
+     ^
+main.c(63): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Delay_ms(uint32_t ms)
+^
+static 
+main.c(69): warning: no previous prototype for function 'SPI_Init' [-Wmissing-prototypes]
+void SPI_Init(void){
+     ^
+main.c(69): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SPI_Init(void){
+^
+static 
+main.c(82): warning: no previous prototype for function 'clock' [-Wmissing-prototypes]
+void clock(void){
+     ^
+main.c(82): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void clock(void){
+^
+static 
+main.c(90): warning: no previous prototype for function 'SPI_Master_Transmit' [-Wmissing-prototypes]
+void SPI_Master_Transmit(uint8_t u8Data){
+     ^
+main.c(90): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SPI_Master_Transmit(uint8_t u8Data){
+^
+static 
+main.c(121): warning: no previous prototype for function 'SPI_Slave_Receive' [-Wmissing-prototypes]
+uint8_t SPI_Slave_Receive(void){
+        ^
+main.c(121): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t SPI_Slave_Receive(void){
+^
+static 
+9 warnings generated.
+compiling main.c...
+compiling stm32f10x_rcc.c...
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(22): warning: In file included from...
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(50): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(725): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(1982): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2012): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+D:/Users/os/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2057): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_Set << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=1420 RO-data=252 RW-data=0 ZI-data=1632  
+".\Objects\spi_soft.axf" - 0 Error(s), 16 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,39 +150,39 @@ Package Vendor: Keil
 <h2>Collection of Component include folders:</h2>
   .\RTE\Device\STM32F103C8
   .\RTE\_Target_1
-  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
-  C:\Users\Admin\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
-  C:\Users\Admin\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc
+  D:\Users\os\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+  D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
-      Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
 
    * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
       Include file:  Device\StdPeriph_Driver\inc\misc.h
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
       Source file:   Device\StdPeriph_Driver\src\misc.c
       Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
 
    * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
 
    * Component: Keil::Device:StdPeriph Drivers:TIM:3.6.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
-Build Time Elapsed:  00:00:00
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

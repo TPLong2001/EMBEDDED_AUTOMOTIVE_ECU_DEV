@@ -3,31 +3,53 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ÂµVision V5.31.0.0
+IDE-Version: µVision V5.31.0.0
 Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: cong ly, truongcongly.com, LIC=YA39H-WIZVT-30HNC-7Q0J1-NP01Q-12Z06
+License Information: LONG TRUONG, PHI, LIC=BUURY-IN4J8-GKVBG-V0NJW-7XGRN-QFUAX
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.14
-Assembler:       Armasm.exe V6.14
-Linker/Locator:  ArmLink.exe V6.14
-Library Manager: ArmAr.exe V6.14
-Hex Converter:   FromElf.exe V6.14
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
 CPU DLL:         SARMCM3.DLL V5.31.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
 Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
 Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
-D:\code\EMB_STM32_INTERVIEW\EMBEDDED_AUTOMOTIVE_ECU_DEV\Less5_SPI\Practice\hardware\SPI_Hard.uvprojx
-Project File Date:  04/07/2025
+D:\code\EMB_STM32_INTERVIEW\EMBEDDED_AUTOMOTIVE_ECU_DEV\EMBEDDED_AUTOMOTIVE_ECU_DEV\Less5_SPI\Practice\master\hardware\SPI_Hard.uvprojx
+Project File Date:  04/25/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\Objects\SPI_Hard.axf" - 0 Error(s), 0 Warning(s).
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_gpio.c...
+"no source": Error:  #219: error while deleting file ".\objects\stm32f10x_gpio.d": Permission denied
+D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_gpio.c: 0 warnings, 1 error
+compiling stm32f10x_tim.c...
+"no source": Error:  #219: error while deleting file ".\objects\stm32f10x_tim.d": Permission denied
+D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_tim.c: 0 warnings, 1 error
+compiling stm32f10x_spi.c...
+"no source": Error:  #219: error while deleting file ".\objects\stm32f10x_spi.d": Permission denied
+D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_spi.c: 0 warnings, 1 error
+compiling main.c...
+"no source": Error:  #219: error while deleting file ".\objects\main.d": Permission denied
+main.c: 0 warnings, 1 error
+compiling stm32f10x_rcc.c...
+"no source": Error:  #219: error while deleting file ".\objects\stm32f10x_rcc.d": Permission denied
+D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\stm32f10x_rcc.c: 0 warnings, 1 error
+compiling system_stm32f10x.c...
+"no source": Error:  #219: error while deleting file ".\objects\system_stm32f10x.d": Permission denied
+RTE\Device\STM32F103C8\system_stm32f10x.c: 0 warnings, 1 error
+compiling misc.c...
+"no source": Error:  #219: error while deleting file ".\objects\misc.d": Permission denied
+D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\src\misc.c: 0 warnings, 1 error
+".\Objects\SPI_Hard.axf" - 7 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,43 +73,44 @@ Package Vendor: Keil
 <h2>Collection of Component include folders:</h2>
   .\RTE\Device\STM32F103C8
   .\RTE\_Target_1
-  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
-  C:\Users\Admin\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
-  C:\Users\Admin\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc
+  D:\Users\os\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+  D:\Users\os\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_stm32f10x.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Source file:   Device\Source\ARM\STM32F1xx_OPT.s
-      Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\system_stm32f10x.c
 
    * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
       Include file:  Device\StdPeriph_Driver\inc\misc.h
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
-      Source file:   Device\StdPeriph_Driver\src\misc.c
       Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
       Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
 
    * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
 
    * Component: Keil::Device:StdPeriph Drivers:SPI:3.6.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_spi.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_spi.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_spi.c
 
    * Component: Keil::Device:StdPeriph Drivers:TIM:3.6.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
-Build Time Elapsed:  00:00:00
+Target not created.
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
